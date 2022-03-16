@@ -8,7 +8,7 @@ export const getPost = () => {
     })
     .then((result) => {
         let random = Math.floor(Math.random() * result.length)
-        document.querySelector('h2').innerText = result[random].title
-        document.querySelector('p').innerText = result[random].body
+        document.querySelector('.title').innerText = result[random].title
+        document.querySelector('.text-body').innerText = result[random].body
     })
 }
